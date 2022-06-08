@@ -14,8 +14,6 @@ formRef.onsubmit = function (event) {
     return;
   }
 
-
-
   let ulRef = document.getElementById('todo-list')
   let listItems = ulRef.childNodes
   for (const li of listItems) {
@@ -41,8 +39,6 @@ formRef.onsubmit = function (event) {
     }
   }
 
-  //let textNode = document.createTextNode('string')
-  //buttonNode.append(textNode)
   liNode.append(buttonNode)
   ulRef.append(liNode)
   inputRef.value = ''
